@@ -67,15 +67,6 @@ Help developers, students, and AI enthusiasts understand every line of a Transfo
 
 ---
 
-🧩 Example Output
-
-Initial loss (random): 3.2871
-Epoch 20 loss: 0.0421
-Input:  [3, 7, 5, 9]
-Output: [3, 7, 5, 9] ✅
-
----
-
 📚 References
 
 Attention Is All You Need (Vaswani et al., 2017)

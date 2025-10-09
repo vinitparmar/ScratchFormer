@@ -36,6 +36,7 @@ ScratchFormer/
 └── notebooks/
 └── transformer_from_scratch.ipynb # (Optional) Jupyter notebook for explanation
 
+---
 
 🧠 Concepts You’ll Learn
 

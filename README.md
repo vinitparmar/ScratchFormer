@@ -20,3 +20,106 @@ This project helps you deeply understand how modern architectures like GPT and B
 ---
 
 ## 🏗️ Project Structure
+
+ScratchFormer/
+│
+├── README.md
+├── requirements.txt
+│
+├── scratchformer/
+│ ├── init.py
+│ └── transformer_from_scratch_numpy.py # Main transformer implementation
+│
+├── examples/
+│ └── copy_task_demo.py # Simple demo/training example
+│
+└── notebooks/
+└── transformer_from_scratch.ipynb # (Optional) Jupyter notebook for explanation
+
+
+---
+
+## ⚙️ Installation & Setup
+
+**Clone this repository**
+   ```bash
+   git clone https://github.com/<your-username>/ScratchFormer.git
+   cd ScratchFormer
+
+   pip install -r requirements.txt
+   python examples/copy_task_demo.py
+
+---
+
+🧠 Concepts You’ll Learn
+
+Linear Algebra in neural networks (matrix operations)
+
+Self-Attention and Multi-Head Attention
+
+Positional Encoding and Sequence Order
+
+Encoder–Decoder architecture
+
+Layer Normalization and Residual Connections
+
+How Transformers learn sequence relationships
+
+---
+
+📘 Educational Goals
+
+ScratchFormer was built to:
+
+Teach the core principles of Transformers
+
+Provide a readable, minimal implementation for learning
+
+Serve as a foundation for experiments or PyTorch conversion
+
+Help developers, students, and AI enthusiasts understand every line of a Transformer
+
+---
+
+🧩 Example Output
+
+Initial loss (random): 3.2871
+Epoch 20 loss: 0.0421
+Input:  [3, 7, 5, 9]
+Output: [3, 7, 5, 9] ✅
+
+---
+
+📚 References
+
+Attention Is All You Need (Vaswani et al., 2017)
+
+The Illustrated Transformer — Jay Alammar
+
+3Blue1Brown — Linear Algebra Series
+
+
+---
+
+🧰 Requirements
+
+Python 3.9+
+NumPy 1.26+
+
+---
+
+🪄 Future Enhancements
+
+PyTorch version for training with autograd
+
+Visualization of attention maps
+
+GPT-style text generation
+
+Colab notebook for interactive learning
+
+---
+
+📄 License
+
+MIT License © 2025 Vinit Parmar

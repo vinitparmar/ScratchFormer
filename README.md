@@ -37,20 +37,6 @@ ScratchFormer/
 └── transformer_from_scratch.ipynb # (Optional) Jupyter notebook for explanation
 
 
----
-
-## ⚙️ Installation & Setup
-
-**Clone this repository**
-   ```bash
-   git clone https://github.com/<your-username>/ScratchFormer.git
-   cd ScratchFormer
-
-   pip install -r requirements.txt
-   python examples/copy_task_demo.py
-
----
-
 🧠 Concepts You’ll Learn
 
 Linear Algebra in neural networks (matrix operations)

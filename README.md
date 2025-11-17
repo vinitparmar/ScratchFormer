@@ -57,6 +57,129 @@ This project helps you deeply understand how modern architectures like GPT and B
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/574f9775-ec8f-4376-a7f2-862f22190a54" />
 
+🧱 1. Embedding & Positional Encoding
+
+Goal: Convert token IDs into continuous vector representations.
+
+We'll code:
+
+Token Embedding
+
+Sinusoidal Positional Encoding
+
+➡️ Output: tensor of shape (batch_size, seq_len, d_model)
+
+⚡ 2. Scaled Dot-Product Attention
+
+Goal: Compute attention weights between tokens.
+
+We'll code:
+
+Queries (Q), Keys (K), Values (V)
+
+Attention formula
+
+### 🧠 Scaled Dot-Product Attention
+
+The core operation behind the Transformer is the **Scaled Dot-Product Attention**, defined as:
+
+\[
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^{T}}{\sqrt{d_k}}\right)V
+\]
+
+Where:
+- \( Q \) = Query matrix  
+- \( K \) = Key matrix  
+- \( V \) = Value matrix  
+- \( d_k \) = dimensionality of the key vectors
+
+
+➡️ Output: context vectors (weighted representations)
+
+🧩 3. Multi-Head Attention
+
+Goal: Run multiple attention heads in parallel.
+
+We'll code:
+
+Linear projections for multiple heads
+
+Head splitting and concatenation
+
+Output projection layer
+
+➡️ Output: richer contextual embeddings
+
+🔁 4. Feed Forward Network (FFN)
+
+Goal: Add non-linear transformations per token.
+
+We'll code:
+
+Linear → GELU → Linear
+
+Dropout (optional)
+
+➡️ Output: transformed representation per position
+
+🧠 5. Layer Normalization + Residual Connections
+
+Goal: Stabilize and accelerate training.
+
+We'll code:
+
+LayerNorm(x + Sublayer(x))
+
+Residual skips between attention and feed-forward layers
+
+🧰 6. Encoder Layer
+
+Goal: Stack multiple layers of attention + FFN.
+
+We'll code:
+
+Self-Attention + FFN + Norm + Residual
+
+N identical layers in sequence
+
+💬 7. Decoder Layer
+
+Goal: Generate sequences autoregressively.
+
+We'll code:
+
+Masked Multi-Head Self-Attention
+
+Encoder–Decoder Attention
+
+Feed Forward Network
+
+Norm + Residual
+
+🧩 8. Transformer (Full Model)
+
+Goal: Combine encoder + decoder into one model.
+
+We'll code:
+
+Encoder → Decoder → Linear Projection → Softmax
+
+➡️ Output: logits over target vocabulary.
+
+🔬 9. Training Loop (Toy Task)
+
+Goal: See your model learn something.
+
+We'll code:
+
+Forward pass
+
+Cross-entropy loss
+
+Optimization step
+
+Evaluate toy copy/translate task
+
 
 ---
 

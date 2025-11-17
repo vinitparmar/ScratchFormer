@@ -38,6 +38,22 @@ This project helps you deeply understand how modern architectures like GPT and B
 
 ---
 
+## ⚙️ Installation & Setup
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/<your-username>/ScratchFormer.git
+   cd ScratchFormer
+
+2. **Install dependencies**
+   pip install -r requirements.txt
+
+3.  **Run the demo**
+   python examples/copy_task_demo.py
+
+
+---
+
 🧠 Concepts You’ll Learn
 
     Linear Algebra in neural networks (matrix operations)

@@ -53,6 +53,12 @@ This project helps you deeply understand how modern architectures like GPT and B
    python examples/copy_task_demo.py
 
 ---
+## Block Diagram
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/574f9775-ec8f-4376-a7f2-862f22190a54" />
+
+
+---
 
 🧠 Concepts You’ll Learn
 

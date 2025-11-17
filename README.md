@@ -52,7 +52,7 @@ This project helps you deeply understand how modern architectures like GPT and B
    ```bash
    python examples/copy_task_demo.py
 
-
+---
 
 🧠 Concepts You’ll Learn
 

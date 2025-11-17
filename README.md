@@ -83,9 +83,9 @@ Attention formula
 
 The core operation behind the Transformer is the **Scaled Dot-Product Attention**, defined as:
 
-\[
+$$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^{T}}{\sqrt{d_k}}\right)V
-\]
+$$
 
 Where:
 - \( Q \) = Query matrix  

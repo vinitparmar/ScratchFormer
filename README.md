@@ -46,9 +46,11 @@ This project helps you deeply understand how modern architectures like GPT and B
    cd ScratchFormer
 
 2. **Install dependencies**
+   ```bash
    pip install -r requirements.txt
 
-3.  **Run the demo**
+4.  **Run the demo**
+   ```bash
    python examples/copy_task_demo.py
 
 

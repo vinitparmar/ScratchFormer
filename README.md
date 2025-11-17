@@ -18,6 +18,249 @@ This project helps you deeply understand how modern architectures like GPT and B
 - 🧪 Includes toy training example (copy / translation task)
 
 ---
+HASE 1 — Foundations
+
+📅 Time: 1–2 days
+
+1. Set up repository
+
+Folder structure (scratchformer/, examples/, notebooks/)
+
+Add README + requirements
+
+Create empty module files
+
+2. Write utility math functions
+
+softmax
+
+stable softmax (numerically safe)
+
+create masks (padding + causal)
+
+matrix operations (optional helpers)
+
+📌 Goal: be comfortable with matrix shapes (batch, seq, dim).
+
+PHASE 2 — Core Components (Building Blocks)
+
+📅 Time: 3–5 days
+
+We code every block manually.
+
+3. Token Embedding
+
+lookup matrix vocab_size × d_model
+
+convert token IDs → vectors
+
+4. Positional Encoding
+
+sinusoidal positional encoding (NumPy)
+
+add to embeddings
+
+5. Scaled Dot-Product Attention
+
+compute Q, K, V
+
+formula:
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^{T}}{\sqrt{d_k}}\right)V
+$$
+
+test with small input
+
+6. Multi-Head Attention
+
+linear projection into heads
+
+split → attention → concat
+
+output projection
+
+ensure shapes match exactly
+
+7. Feed Forward Network
+
+Dense → GELU → Dense
+
+per-position (works on each token independently)
+
+8. Layer Normalization
+
+implement from scratch:
+
+mean
+
+variance
+
+normalize
+
+gamma, beta parameters
+
+📌 Goal: Each block should be testable alone with a small script.
+
+PHASE 3 — Encoder-Decoder Architecture
+
+📅 Time: 3–5 days
+
+9. Encoder Layer
+
+multi-head self-attention
+
+residual + layernorm
+
+feed-forward
+
+residual + layernorm
+
+test with random tokens
+
+10. Decoder Layer
+
+masked self-attention
+
+encoder–decoder attention
+
+feed-forward
+
+residuals + norms
+
+11. Encoder Stack
+
+stack N layers in a loop
+
+12. Decoder Stack
+
+stack N layers in a loop
+
+📌 Goal: Build full working encoder & decoder.
+
+PHASE 4 — Full Transformer Model
+
+📅 Time: 3–4 days
+
+13. Combine encoder + decoder
+
+input embeddings
+
+positional encodings
+
+encoder output → decoder input
+
+final linear layer projecting to vocab size
+
+14. Forward pass
+
+accept:
+
+src_tokens
+
+tgt_tokens
+
+masks
+
+output logits
+
+15. Greedy decoding
+
+autoregressive decoding
+
+feed previous tokens into decoder
+
+generate sequences
+
+📌 Goal: Model can run a forward pass and generate output.
+
+PHASE 5 — Training (Toy Examples)
+
+📅 Time: 3–6 days
+
+16. Build simple cross-entropy loss
+
+compute average loss ignoring padding tokens
+
+17. Create toy dataset
+
+Examples:
+
+Copy task (Y = X)
+
+Reverse task (Y = reversed(X))
+
+Shift-by-one task
+
+Tiny translation mapping
+
+18. Training loop
+
+forward pass
+
+compute loss
+
+backprop through NumPy (optional)
+
+OR partially use PyTorch autograd
+
+update weights manually (SGD or Adam)
+
+📌 Goal: Loss should go down after 5–20 epochs.
+
+PHASE 6 — Enhancements (Optional but Powerful)
+
+📅 Time: 1–2 weeks
+
+19. Port model to PyTorch
+
+same architecture, easier training
+
+GPUs + autograd
+
+20. Visualize Attention
+
+plot attention matrices
+
+use matplotlib or seaborn
+
+21. Add support for larger configs
+
+more layers
+
+more attention heads
+
+22. Train on a real dataset
+
+small translation dataset (IWSLT)
+
+character-level modeling
+
+mini GPT
+
+PHASE 7 — Release & Document
+
+📅 Time: 1–2 days
+
+23. Clean codebase
+
+comments
+
+modular structure
+
+remove unused code
+
+24. Final README updates
+
+diagrams (like the one generated)
+
+architecture explanation
+
+code examples
+
+formulas
+
+---
 
 ## 🏗️ Project Structure
 

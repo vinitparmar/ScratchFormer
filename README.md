@@ -49,9 +49,10 @@ This project helps you deeply understand how modern architectures like GPT and B
    ```bash
    pip install -r requirements.txt
 
-4.  **Run the demo**
+3. **Run the demo**
    ```bash
    python examples/copy_task_demo.py
+
 
 
 ---

@@ -86,11 +86,15 @@ This project helps you deeply understand how modern architectures like GPT and B
 
 📚 References
 
-    Attention Is All You Need (Vaswani et al., 2017)
+    **Attention Is All You Need (Vaswani et al., 2017)**
+     ** url->** https://arxiv.org/abs/1706.03762
     
-    The Illustrated Transformer — Jay Alammar
+    **The Illustrated Transformer — Jay Alammar**
+      **url->** https://jalammar.github.io/illustrated-transformer/
     
-    3Blue1Brown — Linear Algebra Series
+    **3Blue1Brown — Linear Algebra Series**
+      **url->** https://www.3blue1brown.com/topics/linear-algebra
+      
 
 
 ---

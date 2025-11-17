@@ -252,13 +252,9 @@ remove unused code
 
 24. Final README updates
 
-diagrams (like the one generated)
+diagrams 
 
 architecture explanation
-
-code examples
-
-formulas
 
 ---
 

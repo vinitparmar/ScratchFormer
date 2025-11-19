@@ -18,7 +18,7 @@ This project helps you deeply understand how modern architectures like GPT and B
 - 🧪 Includes toy training example (copy / translation task)
 
 ---
-HASE 1 — Foundations
+## PHASE 1 — Foundations
 
 📅 Time: 1–2 days
 
@@ -42,7 +42,7 @@ matrix operations (optional helpers)
 
 📌 Goal: be comfortable with matrix shapes (batch, seq, dim).
 
-PHASE 2 — Core Components (Building Blocks)
+## PHASE 2 — Core Components (Building Blocks)
 
 📅 Time: 3–5 days
 
@@ -102,7 +102,7 @@ gamma, beta parameters
 
 📌 Goal: Each block should be testable alone with a small script.
 
-PHASE 3 — Encoder-Decoder Architecture
+## PHASE 3 — Encoder-Decoder Architecture
 
 📅 Time: 3–5 days
 
@@ -138,7 +138,7 @@ stack N layers in a loop
 
 📌 Goal: Build full working encoder & decoder.
 
-PHASE 4 — Full Transformer Model
+## PHASE 4 — Full Transformer Model
 
 📅 Time: 3–4 days
 
@@ -174,7 +174,7 @@ generate sequences
 
 📌 Goal: Model can run a forward pass and generate output.
 
-PHASE 5 — Training (Toy Examples)
+## PHASE 5 — Training (Toy Examples)
 
 📅 Time: 3–6 days
 
@@ -208,7 +208,7 @@ update weights manually (SGD or Adam)
 
 📌 Goal: Loss should go down after 5–20 epochs.
 
-PHASE 6 — Enhancements (Optional but Powerful)
+## PHASE 6 — Enhancements (Optional but Powerful)
 
 📅 Time: 1–2 weeks
 
@@ -238,7 +238,7 @@ character-level modeling
 
 mini GPT
 
-PHASE 7 — Release & Document
+## PHASE 7 — Release & Document
 
 📅 Time: 1–2 days
 
@@ -252,13 +252,9 @@ remove unused code
 
 24. Final README updates
 
-diagrams (like the one generated)
+diagrams 
 
 architecture explanation
-
-code examples
-
-formulas
 
 ---
 
